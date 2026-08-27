@@ -15,12 +15,22 @@ import {
 import SectionHeading from "@/app/_components/ui/SectionHeading";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "About Us | TNR Sainik Academy",
   description:
-    "Learn about TNR Sainik Academy Society — Telangana's premier defence coaching institute established in 2013 at Bahadurpally, Hyderabad. Over 5000 students trained for Army, Navy, Air Force, Police and SSC exams.",
+    "Learn about TNR Sainik Academy Society, Telangana's premier defence coaching institute established in 2013 at Bahadurpally, Hyderabad. Over 5000 students trained for Army, Navy, Air Force, Police and SSC exams.",
 };
 
-/* ─── Data ─────────────────────────────────────────────────── */
+/* ─── Timeline Data ─────────────────────────────────────────── */
+
+const journeyMilestones = [
+  { year: "2013", event: "Academy founded at Bahadurpally, Hyderabad." },
+  { year: "2015", event: "First batch achieved multiple selections in the Indian Army." },
+  { year: "2017", event: "Expanded to Police and SSC coaching programmes." },
+  { year: "2019", event: "500+ students successfully selected." },
+  { year: "2021", event: "NDA preparation programme launched." },
+  { year: "2023", event: "1000+ selections milestone achieved." },
+  { year: "2024", event: "Celebrating 10+ years of excellence." },
+];
 
 const values = [
   {

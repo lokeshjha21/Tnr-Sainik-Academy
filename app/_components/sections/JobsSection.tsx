@@ -12,7 +12,7 @@ export default function JobsSection() {
       <div className="max-w-7xl mx-auto">
         <SectionHeading
           title="Government Jobs We Prepare For"
-          subtitle="From defence forces to state government — TNR trains you for the career you deserve."
+          subtitle="From defence forces to state government, TNR trains you for the career you deserve."
         />
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 gap-3.5">

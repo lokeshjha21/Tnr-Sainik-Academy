@@ -44,7 +44,7 @@ export default function HeroSection() {
           >
             <span className="w-2 h-2 bg-[#F4B51C] rounded-full animate-pulse" />
             <span className="text-[#F4B51C] text-xs font-bold tracking-[0.2em] uppercase">
-              Admissions Open — Bahadurpally, Hyderabad
+              Admissions Open • Bahadurpally, Hyderabad
             </span>
           </motion.div>
 

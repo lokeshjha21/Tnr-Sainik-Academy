@@ -42,8 +42,8 @@ export default function WhyChooseTNR() {
               centered={false}
               className="mb-6"
             />
-            <p className="text-white/65 text-sm leading-relaxed mb-6">
-              We focus on the overall development of students — discipline, physical fitness, and quality education — to achieve their dream career in defence or government services.
+            <p className="text-white/70 text-sm md:text-base leading-relaxed mb-6">
+              We focus on the overall development of students through discipline, physical fitness, and quality education to achieve their dream career in defence or government services.
             </p>
             <a
               href="/about"

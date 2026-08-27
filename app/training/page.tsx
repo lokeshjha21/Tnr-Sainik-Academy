@@ -43,7 +43,7 @@ const programs = [
   {
     icon: Users,
     title: "Drill & Discipline",
-    description: "Parade ground drill, turn-out, and military discipline training — a vital component of armed forces selection.",
+    description: "Parade ground drill, turn-out, and military discipline training as a vital component of armed forces selection.",
   },
   {
     icon: Activity,
@@ -194,7 +194,7 @@ export default function TrainingPage() {
         <div className="max-w-3xl mx-auto">
           <SectionHeading
             title="Daily Routine & Timetable"
-            subtitle="A disciplined schedule that mirrors real defence academy life — from 5:30 AM roll call to evening doubt clearing."
+            subtitle="A disciplined schedule that mirrors real defence academy life, from 5:30 AM roll call to evening doubt clearing."
             light
           />
 
