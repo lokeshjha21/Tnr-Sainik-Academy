@@ -339,7 +339,7 @@ export default async function JobDetailPage({ params }: PageProps) {
               <div className="mt-6 pt-5 border-t border-white/10 space-y-2 text-left text-xs text-white/60">
                 <div className="flex items-center gap-2">
                   <Clock size={13} className="text-[#F4B51C]" />
-                  <span>Timings: 6:00 AM – 8:00 PM (Daily)</span>
+                  <span>Timings: 10:00 AM – 6:00 PM (Daily)</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin size={13} className="text-[#F4B51C]" />

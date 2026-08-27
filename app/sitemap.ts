@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { courses } from "./_lib/data/courses";
 import { jobs } from "./_lib/data/jobs";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tnrsainikacademy.com";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tnrsainikacademy.in";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [

@@ -41,14 +41,15 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "TNR Sainik Academy Society" }],
   creator: "TNR Sainik Academy Society",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://tnrsainikacademy.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://tnrsainikacademy.in"),
   openGraph: {
     type: "website",
     locale: "en_IN",
     siteName: "TNR Sainik Academy Society",
     title: "TNR Sainik Academy Hyderabad | Best Defence & Government Exam Coaching",
     description:
-      "Best defence exam coaching academy in Hyderabad. Indian Army, Navy, Air Force, Police, SSC, Railway preparation with expert faculty and physical training.",
+      "Best defence exam coaching academy in Hyderabad. Indian Army, Navy, Air Force, Police, SSC, Railway preparation with expert faculty and daily physical training. Located at Bahadurpally, Hyderabad.",
+    url: "https://tnrsainikacademy.in",
   },
   twitter: {
     card: "summary_large_image",
@@ -57,7 +58,7 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.json",
   alternates: {
-    canonical: "https://tnrsainikacademy.com",
+    canonical: "https://tnrsainikacademy.in",
   },
   robots: {
     index: true,
@@ -120,8 +121,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               openingHoursSpecification: {
                 "@type": "OpeningHoursSpecification",
                 dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-                opens: "06:00",
-                closes: "20:00",
+                opens: "10:00",
+                closes: "18:00",
               },
               foundingDate: "2013",
             }),

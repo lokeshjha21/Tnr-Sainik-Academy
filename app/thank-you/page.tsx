@@ -51,7 +51,7 @@ export default function ThankYouPage() {
         </div>
         <div className="mt-10 pt-8 border-t border-[#142315]/10">
           <p className="text-[#677064] text-sm">
-            Academy: 6:00 AM – 8:00 PM · Mon–Sun · 8886779779
+            Academy: 10:00 AM – 6:00 PM · Mon–Sun · 8886779779
           </p>
         </div>
       </div>
