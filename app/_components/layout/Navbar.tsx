@@ -6,6 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/app/_lib/cn";
+import logo from "../../icon.png"
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -30,15 +31,15 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full bg-[#142315] border-b border-white/10 shadow-lg shadow-black/25">
       <nav className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16 lg:h-[78px]">
         {/* Official TNR Eagle Logo */}
-        <Link href="/" className="flex items-center gap-3 shrink-0 group py-1">
-          <div className="relative w-12 h-12 lg:w-14 lg:h-14 shrink-0 transition-transform duration-200 group-hover:scale-105">
+        <Link href="/" className="flex items-center gap-3.5 shrink-0 group py-1">
+          <div className="relative w-14 h-14 lg:w-16 lg:h-16 shrink-0 transition-transform duration-200 group-hover:scale-105 drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
             <Image
-              src="/images/tnr-logo.png"
+              src={logo}
               alt="TNR Sainik Academy Logo"
               fill
               priority
               className="object-contain"
-              sizes="64px"
+              sizes="(max-width: 768px) 56px, 64px"
             />
           </div>
           <div className="flex flex-col">
@@ -51,9 +52,7 @@ export default function Navbar() {
             <div className="text-[#F4B51C] text-[11px] lg:text-[12px] tracking-[0.16em] font-extrabold leading-tight uppercase mt-0.5">
               Sainik Academy Society
             </div>
-            <div className="text-white/60 text-[7px] lg:text-[8px] tracking-[0.18em] font-medium leading-none uppercase mt-0.5 hidden sm:block">
-              Discipline • Fitness • Education • Success
-            </div>
+  
           </div>
         </Link>
 

@@ -2,7 +2,17 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { MapPin, Phone, Clock, Mail, ExternalLink, Loader2, CheckCircle2 } from "lucide-react";
+import Image from "next/image";
+import {
+  MapPin,
+  Phone,
+  Clock,
+  Mail,
+  ExternalLink,
+  Loader2,
+  CheckCircle2,
+} from "lucide-react";
+import logo from "../../icon.png";
 
 const quickLinks = [
   { label: "Home", href: "/" },
@@ -20,7 +30,10 @@ const quickLinks = [
 
 const usefulLinks = [
   { label: "Indian Army Official", href: "https://joinindianarmy.nic.in" },
-  { label: "Indian Air Force Official", href: "https://airmenselection.cdac.in" },
+  {
+    label: "Indian Air Force Official",
+    href: "https://airmenselection.cdac.in",
+  },
   { label: "Indian Navy Official", href: "https://joinindiannavy.gov.in" },
   { label: "SSC Official", href: "https://ssc.gov.in" },
   { label: "Railway Official", href: "https://www.rrbcdg.gov.in" },
@@ -41,8 +54,15 @@ const coursesList = [
 ];
 
 export default function Footer() {
-  const [formData, setFormData] = useState({ name: "", phone: "", course: "", message: "" });
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    course: "",
+    message: "",
+  });
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -76,34 +96,69 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Column 1 — Contact */}
         <div>
+          <div className="flex items-center gap-3 mb-5">
+            <div className="relative w-12 h-12 shrink-0">
+              <Image
+                src={logo}
+                alt="TNR Sainik Academy"
+                fill
+                className="object-contain"
+                sizes="48px"
+              />
+            </div>
+            <div>
+              <p
+                className="text-white font-extrabold text-lg leading-none uppercase"
+                style={{
+                  fontFamily: "var(--font-barlow-condensed, sans-serif)",
+                }}
+              >
+                TNR SAINIK
+              </p>
+              <p className="text-[#F4B51C] text-[10px] tracking-widest font-extrabold uppercase mt-0.5">
+                Academy Society
+              </p>
+            </div>
+          </div>
           <h3
-            className="text-white font-extrabold text-lg mb-5 tracking-wide uppercase"
+            className="text-white font-extrabold text-sm mb-4 tracking-wider uppercase text-white/90"
             style={{ fontFamily: "var(--font-barlow-condensed, sans-serif)" }}
           >
-            Contact Us
+            Contact Information
           </h3>
           <ul className="space-y-3.5 text-xs text-white/70">
             <li className="flex gap-3">
               <MapPin size={15} className="text-[#F4B51C] mt-0.5 shrink-0" />
               <span className="leading-relaxed">
-                Survey No. 108, Main Road,<br />
-                Opposite Gandhi Statue,<br />
-                Bahadurpally, Hyderabad,<br />
+                Survey No. 108, Main Road,
+                <br />
+                Opposite Gandhi Statue,
+                <br />
+                Bahadurpally, Hyderabad,
+                <br />
                 Telangana – 500043
               </span>
             </li>
             <li>
-              <a href="tel:8886779779" className="flex items-center gap-3 hover:text-[#F4B51C] transition-colors font-semibold text-white">
+              <a
+                href="tel:8886779779"
+                className="flex items-center gap-3 hover:text-[#F4B51C] transition-colors font-semibold text-white"
+              >
                 <Phone size={15} className="text-[#F4B51C] shrink-0" />
-                <span>8886779779</span>
+                <span>8886779779, 8886770056/58, 7997990954</span>
               </a>
             </li>
             <li className="flex gap-3">
               <Clock size={15} className="text-[#F4B51C] shrink-0 mt-0.5" />
-              <span className="leading-relaxed">6:00 AM – 8:00 PM (Mon – Sun)</span>
+              <span className="leading-relaxed">
+                10:00 AM – 6:00 PM (Mon – Sun)
+              </span>
             </li>
             <li>
-              <a href="mailto:tnrsainikacademy@gmail.com" className="flex items-center gap-3 hover:text-[#F4B51C] transition-colors">
+              <a
+                href="mailto:tnrsainikacademy@gmail.com"
+                className="flex items-center gap-3 hover:text-[#F4B51C] transition-colors"
+              >
                 <Mail size={15} className="text-[#F4B51C] shrink-0" />
                 <span className="break-all">tnrsainikacademy@gmail.com</span>
               </a>
@@ -170,7 +225,9 @@ export default function Footer() {
             <div className="bg-white/10 rounded p-4 text-center">
               <CheckCircle2 size={24} className="text-[#F4B51C] mx-auto mb-2" />
               <p className="text-white text-xs font-bold">Enquiry Received!</p>
-              <p className="text-white/60 text-[10px] mt-1">Our team will call you shortly.</p>
+              <p className="text-white/60 text-[10px] mt-1">
+                Our team will call you shortly.
+              </p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-2.5 text-xs">
@@ -180,7 +237,9 @@ export default function Footer() {
                   placeholder="Your Name"
                   required
                   value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, name: e.target.value })
+                  }
                   className="w-full bg-white text-[#182017] rounded px-3 py-2 text-xs placeholder:text-gray-500 outline-none focus:ring-1 focus:ring-[#F4B51C]"
                 />
                 <input
@@ -188,7 +247,9 @@ export default function Footer() {
                   placeholder="Phone Number"
                   required
                   value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, phone: e.target.value })
+                  }
                   className="w-full bg-white text-[#182017] rounded px-3 py-2 text-xs placeholder:text-gray-500 outline-none focus:ring-1 focus:ring-[#F4B51C]"
                 />
               </div>
@@ -196,7 +257,9 @@ export default function Footer() {
               <select
                 required
                 value={formData.course}
-                onChange={(e) => setFormData({ ...formData, course: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, course: e.target.value })
+                }
                 className="w-full bg-white text-[#182017] rounded px-3 py-2 text-xs outline-none focus:ring-1 focus:ring-[#F4B51C]"
               >
                 <option value="">Select Course</option>
@@ -211,7 +274,9 @@ export default function Footer() {
                 placeholder="Your Message"
                 rows={2}
                 value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, message: e.target.value })
+                }
                 className="w-full bg-white text-[#182017] rounded px-3 py-2 text-xs placeholder:text-gray-500 outline-none focus:ring-1 focus:ring-[#F4B51C] resize-none"
               />
 
@@ -219,7 +284,10 @@ export default function Footer() {
                 type="submit"
                 disabled={status === "loading"}
                 className="w-full bg-[#F4B51C] hover:bg-[#D89A0D] disabled:opacity-60 text-[#142315] font-extrabold text-xs tracking-widest uppercase py-2.5 rounded transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
-                style={{ fontFamily: "var(--font-barlow-condensed, sans-serif)", fontSize: "13px" }}
+                style={{
+                  fontFamily: "var(--font-barlow-condensed, sans-serif)",
+                  fontSize: "13px",
+                }}
               >
                 {status === "loading" ? (
                   <>
@@ -238,8 +306,11 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/50">
-          <p>© {new Date().getFullYear()} TNR Sainik Academy Society. All Rights Reserved.</p>
-          <p>Designed with ❤️ for Future Defenders of India</p>
+          <p>
+            © {new Date().getFullYear()} TNR Sainik Academy Society. All Rights
+            Reserved.
+          </p>
+          <p>Designed & Developed By Lokesh Kumar Jha</p>
         </div>
       </div>
     </footer>

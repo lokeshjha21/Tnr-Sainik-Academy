@@ -55,7 +55,7 @@ export default function ContactPage() {
                   <div>
                     <p className="text-[#142315] font-bold text-sm mb-1">Phone</p>
                     <a href="tel:8886779779" className="text-[#677064] text-sm hover:text-[#F4B51C] transition-colors">
-                      8886779779
+                      8886779779, 8886770056/58, 7997990954
                     </a>
                   </div>
                 </div>
@@ -66,7 +66,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-[#142315] font-bold text-sm mb-1">Academy Timing</p>
-                    <p className="text-[#677064] text-sm">6:00 AM – 8:00 PM</p>
+                    <p className="text-[#677064] text-sm">10:00 AM – 6:00 PM</p>
                     <p className="text-[#677064] text-sm">Monday – Sunday (All Days)</p>
                   </div>
                 </div>
