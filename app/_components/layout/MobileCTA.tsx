@@ -8,6 +8,7 @@ export default function MobileCTA() {
       <div className="grid grid-cols-3">
         <a
           href="tel:8886779779"
+          aria-label="Call Academy at 8886779779"
           className="flex flex-col items-center justify-center gap-1 py-3 text-white hover:bg-white/5 active:bg-white/10 transition-colors"
         >
           <Phone size={18} className="text-[#F4B51C]" />
@@ -17,6 +18,7 @@ export default function MobileCTA() {
           href="https://wa.me/917997990954?text=Hello%20Sir%2FMam%2C%20I%20would%20like%20to%20know%20more%20about%20TNR%20Sainik%20Academy%20admission%20and%20training%20programs."
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Chat on WhatsApp with Academy"
           className="flex flex-col items-center justify-center gap-1 py-3 bg-[#25D366] text-white hover:bg-[#1da851] active:bg-[#19a047] transition-colors"
         >
           <MessageCircle size={18} />
@@ -24,6 +26,7 @@ export default function MobileCTA() {
         </a>
         <Link
           href="/admission-enquiry"
+          aria-label="Go to Admission Enquiry Form"
           className="flex flex-col items-center justify-center gap-1 py-3 bg-[#F4B51C] text-[#142315] hover:bg-[#D89A0D] active:bg-[#c28a0b] transition-colors"
         >
           <FileText size={18} />

@@ -102,6 +102,37 @@ export default function ContactPage() {
                   WHATSAPP
                 </a>
               </div>
+
+              {/* Social Channels */}
+              <div className="pt-4 border-t border-[#142315]/10">
+                <p className="text-[#142315] font-bold text-xs uppercase tracking-wider mb-3">Official Social Channels</p>
+                <div className="flex gap-2.5">
+                  <a
+                    href="https://www.instagram.com/tnrsas"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 bg-white border border-[#142315]/15 hover:border-[#E4405F] text-[#142315] hover:text-[#E4405F] text-xs font-bold px-3 py-2 rounded transition-colors shadow-sm"
+                  >
+                    <span>Instagram</span>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/@TNRSAINIKACADEMYSOCIETY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 bg-white border border-[#142315]/15 hover:border-[#FF0000] text-[#142315] hover:text-[#FF0000] text-xs font-bold px-3 py-2 rounded transition-colors shadow-sm"
+                  >
+                    <span>YouTube</span>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/TNRSAS/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 bg-white border border-[#142315]/15 hover:border-[#1877F2] text-[#142315] hover:text-[#1877F2] text-xs font-bold px-3 py-2 rounded transition-colors shadow-sm"
+                  >
+                    <span>Facebook</span>
+                  </a>
+                </div>
+              </div>
             </div>
 
             {/* Map */}

@@ -37,7 +37,9 @@ export default function JobsSection() {
               {/* Button */}
               <Link
                 href={`/jobs/${job.slug}`}
-                className="w-full text-center text-[10px] font-extrabold tracking-widest uppercase bg-[#142315] text-[#F4B51C] py-1.5 rounded transition-all group-hover:bg-[#263C20] group-hover:text-white border border-[#142315]"
+                aria-label={`View ${job.shortTitle} recruitment details`}
+                className="w-full text-center text-xs font-extrabold tracking-wider uppercase bg-[#142315] text-[#F4B51C] py-2.5 rounded transition-all group-hover:bg-[#263C20] group-hover:text-white border border-[#142315] flex items-center justify-center min-h-[38px]"
+                style={{ fontFamily: "var(--font-barlow-condensed, sans-serif)" }}
               >
                 View Details
               </Link>
@@ -58,10 +60,11 @@ export default function JobsSection() {
             </p>
             <Link
               href="/jobs"
-              className="inline-flex items-center gap-1 bg-[#F4B51C] hover:bg-[#D89A0D] text-[#142315] text-[10px] font-extrabold tracking-wider uppercase py-1.5 px-3 rounded transition-colors"
+              aria-label="View all government job notifications"
+              className="w-full text-center text-xs font-extrabold tracking-wider uppercase bg-[#F4B51C] text-[#142315] hover:bg-[#D89A0D] py-2.5 rounded transition-all flex items-center justify-center min-h-[38px]"
+              style={{ fontFamily: "var(--font-barlow-condensed, sans-serif)" }}
             >
-              VIEW ALL JOBS
-              <ArrowRight size={10} />
+              VIEW ALL
             </Link>
           </div>
         </div>

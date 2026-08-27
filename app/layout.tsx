@@ -6,6 +6,7 @@ import Navbar from "./_components/layout/Navbar";
 import Footer from "./_components/layout/Footer";
 import MobileCTA from "./_components/layout/MobileCTA";
 import WhatsAppButton from "./_components/layout/WhatsAppButton";
+import UnderDevModal from "./_components/ui/UnderDevModal";
 
 const barlowCondensed = Barlow_Condensed({
   weight: ["400", "600", "700", "800"],
@@ -124,6 +125,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 opens: "10:00",
                 closes: "18:00",
               },
+              sameAs: [
+                "https://www.instagram.com/tnrsas",
+                "https://www.youtube.com/@TNRSAINIKACADEMYSOCIETY",
+                "https://www.facebook.com/TNRSAS/",
+              ],
               foundingDate: "2013",
             }),
           }}
@@ -134,6 +140,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Footer />
         <MobileCTA />
         <WhatsAppButton />
+        <UnderDevModal />
       </body>
     </html>
   );
