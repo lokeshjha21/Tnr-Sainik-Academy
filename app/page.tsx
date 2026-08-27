@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     "Join TNR Sainik Academy — Hyderabad's premier defence coaching institute. Expert faculty, daily physical training, and proven results in Army, Navy, Air Force, Police, SSC, and Railway exams since 2013.",
 };
 
+
 export default function HomePage() {
   return (
     <>
