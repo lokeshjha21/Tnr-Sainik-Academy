@@ -20,11 +20,12 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/hero-training.jpg"
-          alt="TNR Sainik Academy Training"
+          alt="TNR Sainik Academy Defence and Physical Training"
           fill
           priority
+          sizes="100vw"
           className="object-cover object-center"
-          quality={90}
+          quality={80}
         />
         {/* Gradient overlay — left heavy for text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1209]/95 via-[#0a1209]/75 to-[#0a1209]/30" />

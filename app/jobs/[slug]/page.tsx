@@ -48,7 +48,7 @@ export default async function JobDetailPage({ params }: PageProps) {
 
   const relatedJobs = jobs.filter((j) => job.relatedSlugs.includes(j.slug)).slice(0, 3);
   const whatsappMsg = encodeURIComponent(
-    `Hello TNR Sainik Academy,\n\nI want admission details for ${job.title} preparation course.`
+    `Hello Sir/Mam,\n\nI want admission details for ${job.title} preparation course.`
   );
 
   return (

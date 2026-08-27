@@ -55,9 +55,20 @@ export const metadata: Metadata = {
     title: "TNR Sainik Academy Hyderabad",
     description: "Best defence & government exam coaching in Hyderabad.",
   },
+  manifest: "/manifest.json",
+  alternates: {
+    canonical: "https://tnrsainikacademy.com",
+  },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   icons: {
     icon: [
@@ -67,6 +78,13 @@ export const metadata: Metadata = {
     shortcut: "/images/tnr-logo.png",
     apple: "/images/tnr-logo.png",
   },
+};
+
+export const viewport = {
+  themeColor: "#142315",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

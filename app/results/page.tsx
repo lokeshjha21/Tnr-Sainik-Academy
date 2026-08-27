@@ -19,46 +19,11 @@ const placeholderResults = [
   { name: "Ramesh Naik", exam: "RRB Group D", year: "2023", location: "Hyderabad" },
 ];
 
-const selectionStats = [
-  { value: "1000+", label: "Total Selections" },
-  { value: "400+", label: "Defence Selections" },
-  { value: "300+", label: "Police Selections" },
-  { value: "300+", label: "SSC & Railway" },
-];
 
 export default function ResultsPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="bg-[#142315] py-16 px-4 text-center">
-        <Trophy size={40} className="text-[#F4B51C] mx-auto mb-4" />
-        <h1
-          className="text-5xl md:text-6xl font-bold text-white uppercase mb-4"
-          style={{ fontFamily: "var(--font-barlow-condensed, sans-serif)" }}
-        >
-          Our Results
-        </h1>
-        <p className="text-white/65 max-w-xl mx-auto text-base">
-          Our pride is our students. Over 1000 selections since 2013 across defence, police and government services.
-        </p>
-      </section>
-
-      {/* Stats */}
-      <section className="bg-[#263C20] py-10 px-4">
-        <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          {selectionStats.map((stat) => (
-            <div key={stat.label}>
-              <p
-                className="text-3xl md:text-4xl font-bold text-[#F4B51C]"
-                style={{ fontFamily: "var(--font-barlow-condensed, sans-serif)" }}
-              >
-                {stat.value}
-              </p>
-              <p className="text-white/70 text-xs tracking-widest uppercase mt-1">{stat.label}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+  
 
       {/* Selected Students */}
       <section className="bg-[#F7F3E9] py-16 px-4">

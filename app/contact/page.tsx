@@ -94,7 +94,7 @@ export default function ContactPage() {
                   CALL NOW
                 </a>
                 <a
-                  href="https://wa.me/916300337110?text=Hello%20Lokesh%20Jha%20sir%2C%20I%20would%20like%20to%20know%20more%20about%20TNR%20Sainik%20Academy%20admission%20and%20training%20programs."
+                  href="https://wa.me/917997990954?text=Hello%20Sir%2FMam%2C%20I%20would%20like%20to%20know%20more%20about%20TNR%20Sainik%20Academy%20admission%20and%20training%20programs."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-[#25D366] text-white font-bold text-sm tracking-widest px-6 py-3 rounded hover:bg-[#1da851] transition-colors"
@@ -106,8 +106,17 @@ export default function ContactPage() {
 
             {/* Map */}
             <div>
-              <div className="rounded overflow-hidden shadow-md border border-[#142315]/10 h-80 mb-6">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.918314999712!2d78.43561287859832!3d17.55907534044667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8faf525a652d%3A0xfcfe7aa1964cc673!2sTNR%20Sainik%20Academy%20Society!5e0!3m2!1sen!2sin!4v1787854102582!5m2!1sen!2sin" width="600" height="450"loading="lazy"></iframe>
+              <div className="rounded-xl overflow-hidden shadow-md border border-[#142315]/10 h-80 mb-4">
+                <iframe
+                  title="TNR Sainik Academy Location on Google Maps"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.918314999712!2d78.43561287859832!3d17.55907534044667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8faf525a652d%3A0xfcfe7aa1964cc673!2sTNR%20Sainik%20Academy%20Society!5e0!3m2!1sen!2sin!4v1787854102582!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
               <a
                 href="https://maps.app.goo.gl/XGMpWzuVyw5B6M2u9"

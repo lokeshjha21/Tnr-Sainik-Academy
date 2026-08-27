@@ -11,12 +11,12 @@ const trainingPoints = [
 ];
 
 const galleryThumbnails = [
-  { src: "/images/gallery-running.jpg", alt: "Training" },
-  { src: "/images/physical-training.jpg", alt: "PT Exercises" },
-  { src: "/images/hero-training.jpg", alt: "Formation" },
-  { src: "/images/classroom.jpg", alt: "Classroom" },
-  { src: "/images/about-hero.jpg", alt: "Parade" },
-  { src: "/images/gallery-running.jpg", alt: "Cadets" },
+  { src: "/images/training/training-1.jpeg", alt: "Ground running" },
+  { src: "/images/training/training-2.jpeg", alt: "Physical endurance drills" },
+  { src: "/images/training/training-3.jpeg", alt: "Ground obstacle training" },
+  { src: "/images/training/training-4.jpeg", alt: "Discipline formation" },
+  { src: "/images/banners/banner1.jpeg", alt: "Academy batch training" },
+  { src: "/images/training/training-5.jpeg", alt: "Cadets fitness conditioning" },
 ];
 
 export default function BottomShowcaseSection() {
@@ -36,8 +36,8 @@ export default function BottomShowcaseSection() {
             <div className="grid grid-cols-2 gap-4 items-center mb-6 flex-1">
               <div className="relative h-44 rounded overflow-hidden shadow-sm">
                 <Image
-                  src="/images/gallery-running.jpg"
-                  alt="Cadets Running"
+                  src="/images/training/training-2.jpeg"
+                  alt="Cadets Real Physical Training"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 50vw, 20vw"

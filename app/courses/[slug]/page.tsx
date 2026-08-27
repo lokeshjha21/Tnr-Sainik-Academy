@@ -42,7 +42,7 @@ export default async function CourseDetailPage({ params }: PageProps) {
 
   const relatedCourses = courses.filter((c) => course.relatedSlugs.includes(c.slug)).slice(0, 3);
   const whatsappMsg = encodeURIComponent(
-    `Hello TNR Sainik Academy,\n\nI am interested in the ${course.title} preparation program. Please share admission details.`
+    `Hello Sir/Mam,\n\nI am interested in the ${course.title} preparation program. Please share admission details.`
   );
 
   return (
@@ -224,7 +224,7 @@ export default async function CourseDetailPage({ params }: PageProps) {
                 </a>
 
                 <a
-                  href={`https://wa.me/916300337110?text=${whatsappMsg}`}
+                  href={`https://wa.me/917997990954?text=${whatsappMsg}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1da851] text-white font-extrabold text-xs tracking-widest uppercase py-3.5 rounded-lg transition-colors shadow-md"

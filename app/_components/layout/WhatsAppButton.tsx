@@ -3,10 +3,10 @@
 export default function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/916300337110?text=Hello%20Lokesh%20Jha%20sir%2C%20I%20would%20like%20to%20know%20more%20about%20TNR%20Sainik%20Academy%20admission%20and%20training%20programs."
+      href="https://wa.me/917997990954?text=Hello%20Sir%2FMam%2C%20I%20would%20like%20to%20know%20more%20about%20TNR%20Sainik%20Academy%20admission%20and%20training%20programs."
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Chat with Lokesh Jha on WhatsApp"
+      aria-label="Chat on WhatsApp"
       className="fixed bottom-20 md:bottom-6 right-4 z-40 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg shadow-black/30 hover:bg-[#1da851] hover:scale-110 transition-all duration-200 group"
     >
       <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
