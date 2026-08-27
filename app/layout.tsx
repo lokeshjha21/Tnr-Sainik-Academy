@@ -59,6 +59,14 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: [
+      { url: "/images/tnr-logo.png", type: "image/png" },
+      { url: "/icon.png", type: "image/png" },
+    ],
+    shortcut: "/images/tnr-logo.png",
+    apple: "/images/tnr-logo.png",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

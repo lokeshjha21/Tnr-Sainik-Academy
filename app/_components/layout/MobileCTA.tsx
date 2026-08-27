@@ -14,7 +14,7 @@ export default function MobileCTA() {
           <span className="text-[10px] font-bold tracking-wider">CALL</span>
         </a>
         <a
-          href="https://wa.me/918886779779?text=Hello%20TNR%20Sainik%20Academy%2C%20I%20would%20like%20to%20know%20more%20about%20your%20admission%20and%20training%20programs."
+          href="https://wa.me/916300337110?text=Hello%20Lokesh%20Jha%20sir%2C%20I%20would%20like%20to%20know%20more%20about%20TNR%20Sainik%20Academy%20admission%20and%20training%20programs."
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center justify-center gap-1 py-3 bg-[#25D366] text-white hover:bg-[#1da851] active:bg-[#19a047] transition-colors"

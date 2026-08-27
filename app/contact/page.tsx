@@ -94,7 +94,7 @@ export default function ContactPage() {
                   CALL NOW
                 </a>
                 <a
-                  href="https://wa.me/918886779779?text=Hello%20TNR%20Sainik%20Academy%2C%20I%20would%20like%20to%20know%20more%20about%20your%20admission%20and%20training%20programs."
+                  href="https://wa.me/916300337110?text=Hello%20Lokesh%20Jha%20sir%2C%20I%20would%20like%20to%20know%20more%20about%20TNR%20Sainik%20Academy%20admission%20and%20training%20programs."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-[#25D366] text-white font-bold text-sm tracking-widest px-6 py-3 rounded hover:bg-[#1da851] transition-colors"
@@ -107,19 +107,10 @@ export default function ContactPage() {
             {/* Map */}
             <div>
               <div className="rounded overflow-hidden shadow-md border border-[#142315]/10 h-80 mb-6">
-                <iframe
-                  title="TNR Sainik Academy Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.7!2d78.3932!3d17.5642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDMzJzUxLjEiTiA3OMKwMjMnMzUuNSJF!5e0!3m2!1sen!2sin!4v1693123456789"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.918314999712!2d78.43561287859832!3d17.55907534044667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8faf525a652d%3A0xfcfe7aa1964cc673!2sTNR%20Sainik%20Academy%20Society!5e0!3m2!1sen!2sin!4v1787854102582!5m2!1sen!2sin" width="600" height="450"loading="lazy"></iframe>
               </div>
               <a
-                href="https://maps.google.com/?q=Bahadurpally+Hyderabad+Telangana+500043"
+                href="https://maps.app.goo.gl/XGMpWzuVyw5B6M2u9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-[#142315] font-bold text-sm hover:text-[#F4B51C] transition-colors"

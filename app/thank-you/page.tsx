@@ -33,7 +33,7 @@ export default function ThankYouPage() {
             CALL ACADEMY
           </a>
           <a
-            href="https://wa.me/918886779779?text=Hello%20TNR%20Sainik%20Academy%2C%20I%20have%20submitted%20an%20enquiry%20and%20would%20like%20to%20know%20more."
+            href="https://wa.me/916300337110?text=Hello%20Lokesh%20Jha%20sir%2C%20I%20have%20submitted%20an%20admission%20enquiry%20and%20would%20like%20to%20know%20more."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold text-sm tracking-widest px-6 py-3.5 rounded hover:bg-[#1da851] transition-colors"
