@@ -40,6 +40,8 @@ export default function OrgEmblem({ slug, size = 56 }: OrgEmblemProps) {
         src={imgSrc}
         alt={`${slug} emblem`}
         fill
+        loading="lazy"
+        quality={80}
         className="object-contain"
         sizes={`${size}px`}
       />
