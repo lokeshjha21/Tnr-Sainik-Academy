@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Barlow_Condensed, Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import TopBar from "./_components/layout/TopBar";
 import Navbar from "./_components/layout/Navbar";
@@ -141,6 +142,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <MobileCTA />
         <WhatsAppButton />
         <UnderDevModal />
+        <Analytics />
       </body>
     </html>
   );
